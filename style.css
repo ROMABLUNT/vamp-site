@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: "montserrat"
+}
+
+@font-face {
+    font-family: montserrat; /* Гарнитура шрифта */
+    src: url(fonts/montserrat.ttf); /* Путь к файлу со шрифтом */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .introhead h1 {
+        font-size: 3em;
+    }
+
+    .intro-p, .about-p, .about-content-p, .geniusname {
+        font-size: 1.2em;
+    }
+
+    .aboutcontent, .genius {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aboutcontent img, .genius img {
+        flex: 1;
+        margin: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-content-p, .geniusname {
+        flex: 2;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .introhead h1 {
+        font-size: 6em;
+    }
+
+    .abouth2 {
+        font-size: 4em !important;
+    }
+    .about-p {
+        font-size: 2em !important;
+        max-width: 600px !important;
+    }
+    .abouthead {
+        margin-top: 4em !important;
+    }
+    .telg {
+        width: 100px;
+    }
+    .twit {
+        width: 100px;
+    }
+    .tokenimg {
+        width: 175px;
+    }
+    
+    .intro-p {
+        font-size: 2em !important;
+        max-width: 600px !important;
+    }
+
+    .aboutcontent, .genius {
+        align-items: center;
+    }
+
+    .about-content-p {
+        font-size: 3em !important;
+        max-width: 600px !important;
+    }
+    .toke-h2 {
+        font-size: 4em !important;
+    }
+    .team-h2 {
+        font-size: 4em !important;
+    }
+    .geniusname {
+
+    }
+    .cards {
+        width: 1024px;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+    }
+    .genius {
+
+    }
+    .ellipse {
+        margin-top: 2em !important;
+    }
+    .main-div {
+        height: 3300px !important;
+        background-image: url(images/bg-mobile.jpg);
+    }
+
+    .team-figure .telg {
+        margin-right: 4em;
+    }
+    .main-div {
+        background-image: url(images/bg.jpg) !important;
+    }
+}
+
+.telg, .twit {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Стиль при наведении */
+.telg:hover, .twit:hover {
+    transform: scale(1.2);
+    filter: invert(33%) sepia(88%) saturate(7476%) hue-rotate(353deg) brightness(105%) contrast(128%);
+}
+
+.tokenimg {
+    margin-left: 30px;
+}
+
+.introh1 {
+    animation: pulse 2s infinite;
+    font-size: 2em;
+    color: red;
+}
+
+.tokenimg {
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        color: red;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main-div {
+    height: 3000px;
+    background-image: url(images/bg-mobile.jpg);
+}
+.intro-div {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.introh1 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+}
+.introhead {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro-p {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 2em;
+
+}
+.intro-img {
+    margin: auto;
+    margin-top: 2em;
+}
+.abouth2 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+    margin-top: 2em;
+}
+.about-p {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 2em;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abouthead {
+    margin-top: 2em;
+}
+.telg {
+    margin-right: 4em;
+}
+.aboutcontent {
+    margin: 0;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-content-p {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    max-width: 200px;
+    margin: auto;
+
+}
+.tokenomics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.toke-h2 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+    margin-top: 2em;
+}
+.ellipse {
+    margin-top: 4em;
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.genius {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team-h2 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+    margin-top: 2em;
+}
+.geniusname {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    margin-top: 2em;
+    text-align: center;
+}
+.team-figure {
+    margin-top: 2em;
+}
