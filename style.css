@@ -114,7 +114,7 @@ a {
 }
 
 .telg, .twit {
-    transition: transform 0.3s, filter 0.3s;
+    transition: transform 0.5s, filter 0.3s;
 }
 
 /* Стиль при наведении */
