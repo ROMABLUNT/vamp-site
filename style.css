@@ -101,7 +101,7 @@ a {
         margin-top: 2em !important;
     }
     .main-div {
-        height: 3300px !important;
+        height: 3850px !important;
         background-image: url(images/bg-mobile.jpg);
     }
 
@@ -160,7 +160,7 @@ a {
 }
 
 .main-div {
-    height: 3000px;
+    height: 3500px;
     background-image: url(images/bg-mobile.jpg);
 }
 .intro-div {
