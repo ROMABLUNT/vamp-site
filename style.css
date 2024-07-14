@@ -38,9 +38,23 @@ a {
         flex: 2;
         margin: 10px;
     }
+    .tokenomics-content {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .size {
+        width: 40%;
+    }
+
+
 }
 
 @media (min-width: 1024px) {
+    .size {
+        width: 40%;
+    }
     .introhead h1 {
         font-size: 6em;
     }
@@ -135,6 +149,12 @@ a {
 
 .tokenimg {
     animation: rotate 4s linear infinite;
+}
+.size {
+    width: 80%;
+}
+.circle {
+    padding-right: 3em;
 }
 
 @keyframes pulse {
@@ -236,6 +256,12 @@ a {
 
 }
 .tokenomics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tokenomics-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
