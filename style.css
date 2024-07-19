@@ -45,7 +45,7 @@ a {
         align-items: center;
     }
     .size {
-        width: 40%;
+        width: 40% !important;
     }
 
 
@@ -53,7 +53,7 @@ a {
 
 @media (min-width: 1024px) {
     .size {
-        width: 40%;
+        width: 40% !important;
     }
     .introhead h1 {
         font-size: 6em;
